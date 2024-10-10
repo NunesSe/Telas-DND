@@ -53,7 +53,6 @@ fun DropdownPersonagem(navController: NavController) {
                         selectedRaca = raca
                         expanded = false
 
-                        // Inicializa a classe Personagem com base na raça selecionada
                         personagem = when (raca) {
                             "Alto Elfo" -> Personagem(AltoElfo())
                             "Anão" -> Personagem(Anao())
@@ -86,8 +85,8 @@ fun DropdownPersonagem(navController: NavController) {
         Button(
             onClick = {
                 if (personagem != null) {
-                    navController.navigate("distribuicao_atributos")
-                }
+                    PersonagemManager.personagem = personagem
+                    navController.navigate("distribuicao_atributos")                }
             },
             modifier = Modifier.fillMaxWidth()
         ) {

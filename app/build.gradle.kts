@@ -69,7 +69,7 @@ dependencies {
     androidTestImplementation(libs.androidx.ui.test.junit4)
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
-    implementation("com.github.NunesSe:DND-KOTLIN:feaffdecee")
+    implementation("com.github.NunesSe:DND-KOTLIN:9")
     implementation("androidx.navigation:navigation-compose:2.5.3")
 
 }
