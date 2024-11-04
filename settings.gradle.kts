@@ -9,6 +9,7 @@ pluginManagement {
         }
         mavenCentral()
         gradlePluginPortal()
+        maven("https://jitpack.io")
     }
 }
 dependencyResolutionManagement {
@@ -17,11 +18,9 @@ dependencyResolutionManagement {
         google()
         mavenCentral()
         maven("https://jitpack.io")
-
     }
 }
 
-
-rootProject.name = "dnd"
+rootProject.name = "DND-FINAL"
 include(":app")
  
